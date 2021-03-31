@@ -1,11 +1,10 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] === "POST") {
-
-}
     if (!empty($_POST['nom']) && !empty($_POST['courriel']) && !empty($_POST['phone']) && !empty($_POST['courrielsubject']) && !empty($_POST['message'])) {
 
         header('Location: thanks.php');
+    } else {
+        echo "Tous les champs sont obligatoire";
     }
 ?>
 
